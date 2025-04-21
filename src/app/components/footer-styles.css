@@ -1,0 +1,15 @@
+.footer-bg {
+  background-color: #4A332D; /* Deep Coconut Brown */
+  color: #F5F0E6; /* Warm Ivory Text */
+}
+
+.footer-link {
+  color: #F5F0E6; /* Warm Ivory */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #D2A679; /* Golden Accent */
+  text-decoration: underline;
+}

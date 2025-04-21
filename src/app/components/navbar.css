@@ -1,0 +1,27 @@
+.glass-effect {
+    backdrop-filter: blur(10px);
+    background-color: rgba(36, 214, 116, 0.1); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .glass-effect {
+    background: rgba(0, 128, 0, 0.8); /* Green with transparency */
+    backdrop-filter: blur(10px);
+  }
+  
+  .text-blue {
+    color: #ffd700 !important; /* Gold */
+  }
+  
+  .text-light {
+    color: #fff !important;
+  }
+  
+  .bi {
+    color: #ffd700 !important; /* Gold icons */
+  }
+  
+  .badge {
+    background-color: #ffd700 !important; /* Gold badge */
+    color: green !important; /* Green text */
+  }
+  

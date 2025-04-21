@@ -1,0 +1,199 @@
+/* Kerala Crafts Product Card Styling */
+.product-card {
+  position: relative;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  border-radius: 1px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1.2;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.08);
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.view-product-button {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--color-primary, #d4af37);
+  color: var(--color-text, #333333);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover .view-product-button {
+  transform: translateY(0);
+}
+
+.view-product-button:hover {
+  background-color: white;
+}
+
+.product-info {
+  padding: 1.25rem;
+}
+
+.product-category {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-name-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-name {
+  font-family: var(--font-primary, 'Playfair Display', serif);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-text, #333333);
+  transition: color 0.3s ease;
+}
+
+.product-name:hover {
+  color: var(--color-tertiary, #046307);
+}
+
+.product-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--color-secondary, #8b4513);
+}
+
+.add-to-cart-button {
+  padding: 0.6rem 1rem;
+  background-color: var(--color-tertiary, #046307);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #034d05;
+  transform: translateY(-2px);
+}
+
+/* Skeleton Loader Styling - Keep original for loading states */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 2s infinite;
+  border-radius: 4px;
+}
+
+/* Specific Skeleton Parts */
+.skeleton-img {
+  height: 200px;
+  width: 100%;
+}
+
+.skeleton-title {
+  height: 20px;
+  width: 70%;
+  margin: 10px auto;
+}
+
+.skeleton-text {
+  height: 16px;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.skeleton-price {
+  height: 20px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.skeleton-button {
+  height: 36px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Skeleton Animation */
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-name {
+    font-size: 1.1rem;
+  }
+  
+  .product-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .add-to-cart-button {
+    width: 100%;
+  }
+}

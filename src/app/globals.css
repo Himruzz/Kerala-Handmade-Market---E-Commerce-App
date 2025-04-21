@@ -1,0 +1,19 @@
+:root {
+  --font-playfair-display: 'Playfair Display', serif;
+
+  /* Color Theme: "Heritage Elegance" */
+  --color-primary: #D4AF37; /* Kerala Gold */
+  --color-secondary: #8B5A2B; /* Coconut Brown */
+  --color-background: #FFFFF0; /* Ivory White */
+  --color-accent: #4B8B3B; /* Palm Green */
+  --color-text: #1A1A1A; /* Deep Black */
+}
+
+body {
+  font-family: var(--font-playfair-display);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
